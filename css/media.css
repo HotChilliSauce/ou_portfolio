@@ -1,0 +1,12 @@
+@media screen and (max-width:768px){
+    body{
+        min-width: 100%;
+    }
+    .inner{
+        width: 100%;
+    }
+    #header{
+    }
+    #header h1{
+        position: static;
+    }

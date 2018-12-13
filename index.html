@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>OU_PORTFOLIO</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<link rel="stylesheet" href="font/fonts.css" type="text/css"/>
+<link rel="stylesheet" href="css/include.css" type="text/css"/>
+<link rel="stylesheet" href="css/default.css" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+<link rel="shortcut icon" href="" type="image/x-icon"/>
+<link rel="stylesheet" href="css/mainsmokey.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        /*
+        $(".mainSliderBox").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay:true,
+        autoplaySpeed:2000,
+        prevArrow:'<i class="fas fa-arrow-circle-left prevBtn"></i>',
+        nextArrow:'<i class=" fas fa-arrow-circle-right nextBtn"></i>'
+        });
+        */
+        
+        /*mainRow01 slick*/
+        $('.center').slick({
+          centerMode: true,
+          arrows:false,
+          centerPadding: '60px',
+          slidesToShow: 3,
+          variableWidth:true, 
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+
+        /*mainRow03 slick*/
+        /*row03_1*/
+        $('.row03_1_autoplay').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          prevArrow:'<i class="fas fa-chevron-left prevBtn"></i>',
+          nextArrow:'<i class=" fas fa-chevron-right nextBtn"></i>'
+        });
+        /*row03_2*/
+        $('.row03_2_autoplay').slick({
+          dots: true,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          arrows:false,
+        });
+
+
+    });
+    
+</script>  
+</head>
+<body>
+<!--전체시작-->
+<div id="wrap">
+    
+<!--헤더시작-->
+<header id="header">
+    
+        <!--로고시작-->
+        <h1>
+            <a href="#"><img src="images/common/logo_long02.png" alt="로고"/></a>
+        </h1>
+        <!--로고끝-->
+    <!--gnb시작-->
+    <ul class="gnbL">
+        <li><a href="#">CONTACT ME</a></li>
+    </ul>
+    <ul class="gnbR">
+        <li><a href="#">PROJECT</a></li>
+        <li><a href="#">ABOUT</a></li>
+    </ul>
+    <!--gnb끝-->
+    
+</header>
+<!--헤더끝-->
+    
+<!--컨테이너시작-->
+<div id="container">
+    
+    <!--메인슬라이더시작-->
+
+    <div class="mainSlider">
+        <h1>Web Design &amp; Publishing</h1>
+        <div class="aboutLink"><a href="#"><p>ABOUT</p></a></div>
+        <div class="downArrow"><img src="images/main/down_arrow.png" alt="아래화살표"/></div>
+    </div>
+
+    <!--메인슬라이더끝-->
+
+    
+    <!--mainRow01시작-->
+    <div class="mainRow01">
+        <!--smokey효과-->
+        <style>
+                #bg1 > div { opacity:0.2; }
+                </style>
+        <div id="bg1" style="background: url(images/main/mainRow01_bg.png) center center no-repeat; background-size:cover;"><div id="vcsmokeybackground_1444526818_24053344581" class="vc-smokeybackground-background" data-theid="vcsmokeybackground_1444526818_240544581" data-opacity="0.8" data-maxhuediff="50" data-fixedcolor="false" data-colorhue="0" data-bgcolor="#FFFFFF"  style="display:none;"></div>
+        <!--
+            <style>
+                #bg1 > div { opacity:0.5; }
+                </style>
+        <div id="bg1" style="background: url(images/main/mainRow01_bg.png) center center no-repeat; background-size:cover;"><div id="vcsmokeybackground" class="vc-smokeybackground-background" data-theid="vcsmokeybackground_1444526818_240544582" data-opacity="0.2" data-maxhuediff="50" data-fixedcolor="true" data-colorhue="160" data-bgcolor="#000000"  style="display:none;"></div>	</div>
+        -->
+
+        <!--row01Slider-->
+        <!--
+        <div class="row01Slider">
+            <section class="center slider">
+            <div>
+                <h3>
+                  <img src="images/main/visual01_web01.png" alt="리북웹" class="sliderWeb01">
+                </h3>
+            </div>
+            <div>
+                <h3>
+                  <img src="images/main/visual01_web02.png" alt="노루웹" class="sliderWeb02">
+                </h3>
+            </div>
+            <div>
+                <h3>
+                  <img src="images/main/visual01_mobi01.png">
+                </h3>
+            </div>
+            <div>
+                <h3>
+                  <img src="images/main/visual01_mobi02.png">
+                </h3>
+            </div>
+            </section>
+        </div>
+        -->
+        <!--row01Slider-->
+        <!--제목-->
+            <h3 class="inner"><img src="images/main/visual01_tit.png"/><p>Design &amp; Publishing</p></h3>
+        <!--제목-->
+        <!--3Dgallery-->
+            <section id="dg-container" class="dg-container gallerys">
+            <div class="dg-wrapper">
+                <a href="#"><img src="images/main/visual01_web02.png" alt="웹"><div>NOROO PAINT</div></a>
+                <a href="#"><img src="images/main/visual01_web01.png" alt="웹"><div>LiBook</div></a>
+                <a href="#"><img src="images/main/visual01_mobi01_all.png" alt="모바일"><div>touplanb Mobile</div></a>
+                <a href="#"><img src="images/main/visual01_mobi02_all.png" alt="모바일"><div>NOROO PAINT Mobile</div></a>
+            </div>
+            <nav>	
+                <span class="dg-prev">&lt;</span>
+                <span class="dg-next">&gt;</span>
+            </nav>
+            </section>
+        <!--3Dgallery끝-->
+            
+    </div>
+    <!--bg1Smokey-->
+       
+    </div>
+    <!--mainRow01끝-->
+    
+    <!--mainRow02시작-->
+    <div class="mainRow02">
+        <div class="inner">
+            <!--제목-->
+            <h3><img src="images/main/visual02_tit.png"/><p>only Publishing</p></h3>
+            <!--제목-->
+            <!--slick-->
+            <ul class="row02Top cf">
+                <li><a href="#">
+                    <img src="images/main/visual02_img01.png" class="off" alt="삼성"/>     
+                    <div class="on">
+                        <img src="images/main/visual02_img_hover01.png"/>
+                        <h4><p>Samsung</p></h4>
+                    </div>
+                    </a></li>
+                <li><a href="#">
+                    <img src="images/main/visual02_img02.png" class="off" alt="한솔"/>
+                    <div class="on"><img src="images/main/visual02_img_hover01.png"/>
+                        <h4><p>Hansol</p></h4>
+                    </div>
+                    </a></li>
+            </ul>
+            <ul class="row02Bottom cf">
+                <li><a href="#">
+                    <img src="images/main/visual02_img03.png" class="off" alt="카페베네"/>
+                    <div class="on"><img src="images/main/visual02_img_hover02.png"/>
+                        <h4><p>CafeBene</p></h4>
+                    </div>
+                    </a></li>
+                <li><a href="#">
+                    <img src="images/main/visual02_img04.png" class="off" alt="할리스"/>
+                    <div class="on"><img src="images/main/visual02_img_hover02.png"/>
+                        <h4><p>Hollys</p></h4>
+                    </div>
+                    </a></li>
+                <li><a href="#">
+                    <img src="images/main/visual02_img05.png" class="off" alt="우담라이팅"/>
+                    <div class="on"><img src="images/main/visual02_img_hover02.png"/>
+                        <h4><p>Woodam</span></p></h4>
+                    </div>
+                    </a></li>
+            </ul>
+            <!--slick끝-->
+        </div>
+    </div>
+    <!--mainRow02끝-->
+    
+    <!--mainRow03시작-->
+    <div class="mainRow03">
+        <div class="inner">
+            <!--제목-->
+            <h3 class="row03Tit"><img src="images/main/visual03_tit.png"/></h3>
+            <!--제목끝-->
+            <!--slick row03_1시작-->
+            <div class="row03_1">
+                <div class="row03_1_autoplay">
+                    <div>
+                        <h3>
+                          <a href="#"><img src="images/main/visual03_poster01.png" alt="정도인테리어 포스터"/></a>
+                        </h3>
+                    </div>
+                    <div>
+                        <h3>
+                          <a href="#"><img src="images/main/visual03_poster02.png" alt="빨대포스터"/></a>
+                        </h3>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="#"><img src="images/main/visual03_poster04.png" alt="판타지포스터"/>
+                            </a>
+                        </h3>
+                    </div>
+                    <div>
+                        <h3>
+                         <a href="#"><img src="images/main/visual03_poster03.png" alt="빨대포스터"/></a>
+                        </h3>
+                    </div>
+                    <div>
+                        <h3>
+                         <a href="#"><img src="images/main/visual03_poster05.png" alt="일러"/></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <!--slick row03_1끝-->
+            <!--slick row03_2시작-->
+             <div class="row03_2">
+                <div class="row03_2_autoplay">
+                    <div>
+                      <h3>
+                          <a href="#"><img src="images/main/visual03_logo01.png" alt="어썸뷰티로고"/></a>
+                      </h3>
+                    </div>
+                    <div>
+                      <h3>
+                          <a href="#"><img src="images/main/visual03_logo02.png" alt="노루로고"/></a>
+                      </h3>
+                    </div>
+                    <div>
+                      <h3>
+                          <a href="#"><img src="images/main/visual03_logo03.png" alt="투어플랜비로고"/></a>
+                      </h3>
+                    </div>
+                    <div>
+                      <h3>
+                          <a href="#"><img src="images/main/visual03_logo04.png" alt="리북로고"/></a>
+                      </h3>
+                    </div>
+                    <div>
+                      <h3>
+                          <a href="#"><img src="images/main/visual03_logo05.png" alt="정도인테리어로고"/></a>
+                      </h3>
+                    </div>
+                    <div>
+                      <h3>
+                          <a href="#"><img src="images/main/visual03_logo06.png" alt="프리뷰메이커"/></a>
+                      </h3>
+                    </div>
+                    <div>
+                      <h3>
+                          <a href="#"><img src="images/main/visual03_logo07.png" alt="ou로고"/></a>
+                      </h3>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--slick row03_2끝-->
+        </div>
+    </div>
+    <!--mainRow03끝-->
+    
+    <!--mainRow04-->
+    <div class="mainRow04">
+        <div class="inner">
+            <!--제목-->
+            <h3><img src="images/main/visual04_tit.png"/></h3>
+            <!--제목끝-->
+            <!--contact내용-->
+            <div class="row04Info">
+                <dl>
+                    <dt>Name.</dt>
+                    <dd>Oh Yu-Gyung</dd>
+                </dl>
+                <dl>
+                    <dt>B-day.</dt>
+                    <dd>1990.02.07</dd>
+                </dl>
+                <dl>
+                    <dt>E-mail.</dt>
+                    <dd>hotchilli.html@gmail.com</dd>
+                </dl>
+                <dl>
+                    <a href="tel:010-5339-0059">
+                        <dt>Hp.</dt>
+                        <dd>010-5339-0059</dd>
+                    </a>
+                </dl>
+            </div>
+            <!--contact내용끝-->
+            <!--contact로고-->
+            <div class="row04Logo">
+                <a href="#"><img src="images/common/logo_contact.png" alt="로고"/></a>
+            </div>
+            <!--contact로고끝-->
+        </div>
+    </div>
+    <!--mainRow04끝-->
+    
+<!--푸터시작-->
+    <footer id="footer">
+        <div class="inner">
+            <div class="footerInfo">
+                <h3>Thank you. Wheresoever i go, go with all My heart.</h3>
+                <p>Copyright(C) 2018. Oh Yu-Gyung All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+<!--푸터시작끝-->
+    
+</div>
+<!--컨테이너끝-->
+    
+</div>
+<!--전체끝-->
+
+    <!--smokey효과 --->
+    <script src="color-smoke/index.js"></script>
+    <script src="js/app.js"></script>
+    <!---->    
+    
+    <!--3Dgallery Slick-->
+    <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+    <script type="text/javascript" src="js/jquery.gallery.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#dg-container').gallery();
+			});
+		</script>
+    <!---->
+</body>
+</html>
