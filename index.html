@@ -12,8 +12,10 @@
 <link rel="stylesheet" href="css/style.css" type="text/css"/>
 <link rel="shortcut icon" href="" type="image/x-icon"/>
 <link rel="stylesheet" href="css/mainsmokey.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
 <script type="text/javascript">
     $(document).ready(function(){
@@ -193,45 +195,62 @@
     <div class="mainRow02">
         <div class="inner">
             <!--제목-->
-            <h3><img src="images/main/visual02_tit.png"/><p>only Publishing</p></h3>
-            <!--제목-->
-            <!--slick-->
-            <ul class="row02Top cf">
-                <li><a href="#">
-                    <img src="images/main/visual02_img01.png" class="off" alt="삼성"/>     
-                    <div class="on">
-                        <img src="images/main/visual02_img_hover01.png"/>
-                        <h4><p>Samsung</p></h4>
-                    </div>
-                    </a></li>
-                <li><a href="#">
-                    <img src="images/main/visual02_img02.png" class="off" alt="한솔"/>
-                    <div class="on"><img src="images/main/visual02_img_hover01.png"/>
-                        <h4><p>Hansol</p></h4>
-                    </div>
-                    </a></li>
-            </ul>
-            <ul class="row02Bottom cf">
-                <li><a href="#">
-                    <img src="images/main/visual02_img03.png" class="off" alt="카페베네"/>
-                    <div class="on"><img src="images/main/visual02_img_hover02.png"/>
-                        <h4><p>CafeBene</p></h4>
-                    </div>
-                    </a></li>
-                <li><a href="#">
-                    <img src="images/main/visual02_img04.png" class="off" alt="할리스"/>
-                    <div class="on"><img src="images/main/visual02_img_hover02.png"/>
-                        <h4><p>Hollys</p></h4>
-                    </div>
-                    </a></li>
-                <li><a href="#">
-                    <img src="images/main/visual02_img05.png" class="off" alt="우담라이팅"/>
-                    <div class="on"><img src="images/main/visual02_img_hover02.png"/>
-                        <h4><p>Woodam</span></p></h4>
-                    </div>
-                    </a></li>
-            </ul>
-            <!--slick끝-->
+            <div data-aos="fade-right">
+                <h3><img src="images/main/visual02_tit.png"/><p>only Publishing</p></h3>
+            </div>        
+            <!--제목끝-->
+            <!--퍼블리싱메뉴-->
+            <!--row02Top-->
+            <div class="aos-item" data-aos="fade-down">
+                <div class="aos-item__inner">
+                    <ul class="row02Top cf">
+                        <li><a href="#">
+                            <img src="images/main/visual02_img01.png" class="off" alt="삼성"/>     
+                            <div class="on">
+                                <img src="images/main/visual02_img_hover01.png"/>
+                                <h4><p>Samsung</p></h4>
+                            </div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                            <img src="images/main/visual02_img02.png" class="off" alt="한솔"/>
+                            <div class="on"><img src="images/main/visual02_img_hover01.png"/>
+                                <h4><p>Hansol</p></h4>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--row02Bottom-->
+            <div class="aos-item" data-aos="fade-up">
+                <div class="aos-item__inner">
+                    <ul class="row02Bottom cf">
+                        <li><a href="#">
+                            <img src="images/main/visual02_img03.png" class="off" alt="카페베네"/>
+                            <div class="on"><img src="images/main/visual02_img_hover02.png"/>
+                                <h4><p>CafeBene</p></h4>
+                            </div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                            <img src="images/main/visual02_img04.png" class="off" alt="할리스"/>
+                            <div class="on"><img src="images/main/visual02_img_hover02.png"/>
+                                <h4><p>Hollys</p></h4>
+                            </div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                            <img src="images/main/visual02_img05.png" class="off" alt="우담라이팅"/>
+                            <div class="on"><img src="images/main/visual02_img_hover02.png"/>
+                                <h4><p>Woodam</p></h4>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+          </div>
+            <!--퍼블리싱메뉴끝-->
         </div>
     </div>
     <!--mainRow02끝-->
@@ -240,7 +259,9 @@
     <div class="mainRow03">
         <div class="inner">
             <!--제목-->
-            <h3 class="row03Tit"><img src="images/main/visual03_tit.png"/></h3>
+            <div data-aos="fade-right">
+                <h3 class="row03Tit"><img src="images/main/visual03_tit.png"/></h3>
+            </div>
             <!--제목끝-->
             <!--slick row03_1시작-->
             <div class="row03_1">
@@ -325,7 +346,8 @@
     <div class="mainRow04">
         <div class="inner">
             <!--제목-->
-            <h3><img src="images/main/visual04_tit.png"/></h3>
+            <div data-aos="fade-right"><h3><img src="images/main/visual04_tit.png"/></h3></div>
+            
             <!--제목끝-->
             <!--contact내용-->
             <div class="row04Info">
@@ -361,9 +383,13 @@
 <!--푸터시작-->
     <footer id="footer">
         <div class="inner">
-            <div class="footerInfo">
+            <div data-aos="fade-down"
+                 data-aos-easing="linear"
+                 data-aos-duration="1500">
+                <div class="footerInfo">
                 <h3>Thank you. Wheresoever i go, go with all My heart.</h3>
                 <p>Copyright(C) 2018. Oh Yu-Gyung All rights reserved</p>
+            </div>
             </div>
         </div>
     </footer>
@@ -388,6 +414,15 @@
 				$('#dg-container').gallery();
 			});
 		</script>
+    <!---->
+    
+    <!--aos-->
+    <script src="../dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
     <!---->
 </body>
 </html>

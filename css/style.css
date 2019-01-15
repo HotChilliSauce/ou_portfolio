@@ -54,7 +54,7 @@
 .mainSlider{
     width: 484px;
     height: 496px;
-    background: url(../images/main/mainSlider04.gif) no-repeat center center;
+    background: url(../images/main/mainSlider05.gif) no-repeat center center;
     margin: 0 auto;
 
 }
@@ -72,7 +72,7 @@
     height: 50px;
     background: #000;
     position: absolute;
-    top: 500px;
+    top: 510px;
     left: 50%;
     margin-left: -70px;
 }
