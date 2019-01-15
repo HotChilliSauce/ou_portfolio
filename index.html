@@ -101,7 +101,7 @@
           autoplaySpeed: 1000,
           arrows:false,
         });
-
+        
 
     });
     
@@ -112,13 +112,12 @@
 <div id="wrap">
     
 <!--헤더시작-->
-<header id="header">
-    
-        <!--로고시작-->
-        <h1>
-            <a href="#"><img src="images/common/logo_long02.png" alt="로고"/></a>
-        </h1>
-        <!--로고끝-->
+<header id="header">  
+    <!--로고시작-->
+    <h1>
+        <a href="#"><img src="images/common/logo_long02.png" alt="로고" title="Go to top"/></a>
+    </h1>
+    <!--로고끝-->
     <!--gnb시작-->
     <ul class="gnbL">
         <li><a href="#">CONTACT ME</a></li>
@@ -127,7 +126,12 @@
         <li><a href="#">PROJECT</a></li>
         <li><a href="#">ABOUT</a></li>
     </ul>
-    <!--gnb끝-->  
+    <!--gnb끝-->
+    <!--topButton-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!--topButton끝-->
 </header>
 <!--헤더끝-->
 
@@ -216,13 +220,16 @@
     <div class="mainRow02">
         <div class="inner">
             <!--제목-->
-            <div data-aos="fade-right">
+            <div data-aos="fade-right"
+             data-aos-offset="300"
+             data-aos-easing="ease-in-sine">
                 <h3><img src="images/main/visual02_tit.png"/><p>only Publishing</p></h3>
-            </div>        
+            </div>
+                       
             <!--제목끝-->
             <!--퍼블리싱메뉴-->
             <!--row02Top-->
-            <div class="aos-item" data-aos="fade-down">
+            <div class="aos-item" data-aos="fade-down" data-aos-duration="1000">
                 <div class="aos-item__inner">
                     <ul class="row02Top cf">
                         <li><a href="https://hotchillisauce.github.io/samsung/" target="_blank">
@@ -244,7 +251,7 @@
                 </div>
             </div>
             <!--row02Bottom-->
-            <div class="aos-item" data-aos="fade-up">
+            <div class="aos-item" data-aos="fade-up" data-aos-duration="1000">
                 <div class="aos-item__inner">
                     <ul class="row02Bottom cf">
                         <li><a href="https://hotchillisauce.github.io/cafebene/" target="_blank">
@@ -280,7 +287,7 @@
     <div class="mainRow03">
         <div class="inner">
             <!--제목-->
-            <div data-aos="fade-right">
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <h3 class="row03Tit"><img src="images/main/visual03_tit.png"/></h3>
             </div>
             <!--제목끝-->
@@ -372,7 +379,11 @@
     <div class="mainRow04">
         <div class="inner">
             <!--제목-->
-            <div data-aos="fade-right"><h3><img src="images/main/visual04_tit.png"/></h3></div>
+            <div data-aos="fade-right"
+             data-aos-offset="300"
+             data-aos-easing="ease-in-sine">
+                <h3><img src="images/main/visual04_tit.png"/></h3>
+            </div>
             
             <!--제목끝-->
             <!--contact내용-->
@@ -422,12 +433,33 @@
 <!--푸터끝-->
         
     </div>
+    <!--overflow끝-->
 </div>
 <!--컨테이너끝-->
     
 </div>
 <!--전체끝-->
 
+    <!--topButton-->
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <!---->
     <!--smokey효과 --->
     <script src="color-smoke/index.js"></script>
     <script src="js/app.js"></script>
