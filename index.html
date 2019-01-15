@@ -32,6 +32,26 @@
         });
         */
         
+        /*mainSlider*/
+        var ovf, slider;
+
+        $(function(){
+            ovf = this.getElementById("overflow");
+            slider = this.getElementById("mainBanner");
+            winResize();
+            $(window).bind({resize: winResize, scroll: winScroll});
+        });
+
+        function winResize(){   
+            ovf.style.top = slider.offsetHeight + "px";
+        }
+
+        function winScroll(){
+            var op = 1 - (window.pageYOffset / slider.offsetHeight);
+            slider.style.opacity = op;
+        };
+
+        
         /*mainRow01 slick*/
         $('.center').slick({
           centerMode: true,
@@ -106,25 +126,25 @@
         <li><a href="#">PROJECT</a></li>
         <li><a href="#">ABOUT</a></li>
     </ul>
-    <!--gnb끝-->
-    
+    <!--gnb끝-->  
 </header>
 <!--헤더끝-->
-    
+
+<!--메인슬라이더-->
+
+<!--메인슬라이더끝-->
 <!--컨테이너시작-->
 <div id="container">
-    
     <!--메인슬라이더시작-->
-
-    <div class="mainSlider">
-        <h1>Web Design &amp; Publishing</h1>
-        <div class="aboutLink"><a href="#"><p>ABOUT</p></a></div>
-        <div class="downArrow"><img src="images/main/down_arrow.png" alt="아래화살표"/></div>
+    <div id="mainBanner">
+        <div class="mainSlider">
+            <h1>Web Design &amp; Publishing</h1>
+            <div class="aboutLink"><a href="#"><p>ABOUT</p></a></div>
+            <div class="downArrow"><img src="images/main/down_arrow.png" alt="아래화살표"/></div>
+        </div>
     </div>
-
     <!--메인슬라이더끝-->
-
-    
+    <div id="overflow">
     <!--mainRow01시작-->
     <div class="mainRow01">
         <!--smokey효과-->
@@ -393,8 +413,9 @@
             </div>
         </div>
     </footer>
-<!--푸터시작끝-->
-    
+<!--푸터끝-->
+        
+    </div>
 </div>
 <!--컨테이너끝-->
     
