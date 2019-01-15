@@ -3,15 +3,14 @@
 /*jquery*/
 
 /*mainSlider*/
-#mainBanner{
+.mainBanner{
     width: 100%;
-    height: 700px;
     position: fixed;
 }
-#overflow{
+.overflow{
     width: 100%;
-    height: 100%;
     position: absolute;
+    top: 700px;
 }
 /*slick*/
 .prevBtn, .nextBtn{
