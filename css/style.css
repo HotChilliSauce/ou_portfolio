@@ -388,11 +388,33 @@ box-shadow: 0px 21px 36px -20px rgba(0,0,0,0.69);
     width: 130px;
     float: left;    
     margin-left: 20px;
-    margin-right: 70px;
+    margin-right: 30px;
 }
 .row04Info dl dd{
     float: left;
     font-weight: 100;
+}
+
+.fa-hand-point-right{
+    color: #fff;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.emailSend a:hover .fa-hand-point-right{
+    color: #000;
+}
+.emailSend a:hover dd{
+    color: #000;
+}
+.fa-phone{
+    font-size: 28px;
+    margin-right: 20px;
+}
+.hpCall a:hover dd{
+    color: #000;
+}
+.hpCall a:hover .fa-phone{
+    color: #000;
 }
 .row04Logo{
     position: absolute;
