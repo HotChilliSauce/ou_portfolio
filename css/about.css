@@ -11,7 +11,7 @@ body{
     background: -moz-linear-gradient(top, #fff, #f6ede2); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to top, #fff , #f6ede2); /* Standard syntax */
     }
-#header ul li:hover a:after{
+#header ul li:nth-child(2):hover a:after{
     width: 0;
 }
 #header .gnbR li:nth-child(2):after{
@@ -22,6 +22,9 @@ body{
     background: #000;
     margin: 0 auto;
     margin-top: -10px;
+}
+#header .gnbR li:nth-child(2) a{
+    color: #999;
 }
 /*jquery*/
 /*mainSlider*/
