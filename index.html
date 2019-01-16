@@ -102,7 +102,33 @@
           arrows:false,
         });
         
-            
+        /*popup*/
+        function doImgPop(img){ 
+         img1= new Image(); 
+         img1.src=(img); 
+         imgControll(img); 
+        } 
+
+        function imgControll(img){ 
+         if((img1.width!=0)&&(img1.height!=0)){ 
+            viewImage(img); 
+          } 
+          else{ 
+             controller="imgControll('"+img+"')"; 
+             intervalID=setTimeout(controller,20); 
+          } 
+        }
+
+        function viewImage(img){ 
+         W=img1.width; 
+         H=img1.height; 
+         O="width="+W+",height="+H+",scrollbars=yes"; 
+         imgWin=window.open("","",O); 
+         imgWin.document.write("<html><head><title>이미지상세보기 </title></head>");
+         imgWin.document.write("<body topmargin=0 leftmargin=0>");
+         imgWin.document.write("<img src="+img+" onclick='self.close()' style='cursor:pointer;' title ='클릭하시면 창이 닫힙니다.'>");
+         imgWin.document.close();
+        }
         
 
     });
@@ -144,7 +170,7 @@
 <!--컨테이너시작-->
 <div id="container">
     <!--메인슬라이더시작-->
-    <div class="mainBanner">
+    <div id="mainBanner">
         <div class="mainSlider">
             <h1>Web Design &amp; Publishing</h1>
             <div class="aboutLink"><a href="sub/about.html" data-duration="1s"><p>ABOUT</p></a></div>
@@ -152,7 +178,7 @@
         </div>
     </div>
     <!--메인슬라이더끝-->
-    <div class="overflow">
+    <div id="overflow">
     <!--mainRow01시작-->
     <div class="mainRow01">
         <!--smokey효과-->
@@ -299,7 +325,7 @@
                 <div class="row03_1_autoplay">
                     <div>
                         <h3>
-                          <a href="#"><img src="images/main/visual03_poster01.png" alt="정도인테리어 포스터"/></a>
+                          <a href="#"><img src="images/main/visual03_poster01.png" alt="정도인테리어 포스터" title="클릭하시면 원본크기로 보실 수 있습니다." style="cursor: pointer;" onclick="doImgPop('images/main/poster01.jpg')"/></a>
                         </h3>
                     </div>
                     <div>
@@ -506,7 +532,7 @@
     <!--aos-->
     <script>
       AOS.init({
-        easing: 'ease-in-out-sine'
+        easing: 'ease-out-back'
       });
     </script>
     <!---->

@@ -3,11 +3,12 @@
 /*jquery*/
 
 /*mainSlider*/
-.mainBanner{
+#mainBanner{
     width: 100%;
     position: fixed;
+    padding-bottom: 200px;
 }
-.overflow{
+#overflow{
     width: 100%;
     position: absolute;
     top: 700px;

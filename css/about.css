@@ -43,23 +43,27 @@ body{
 }
 .aboutRow01{
     height: 900px;
-    background: url(../images/sub/About_bg02.jpg) no-repeat;
+    background: url(../images/sub/About_bg03.jpg) no-repeat;
 }
-.aboutRow01.inner{
+.w1000{
+    width: 1000px;
+    margin: 0 auto;
+}
+.aboutRow01 .w1000{
     position: relative;
 }
 .aboutRow01 h3{
     position: absolute;
-    top: 150px;
-    left: 135px;
+    left: 0;
+    margin-top: 280px;
 }
 .name{
     position: absolute;
-    bottom: 220px;
-    left: 50%;
-    margin-left: -210px;
     text-align: right;
     font-size: 17px;
+    left: 26%;
+    margin-top: 450px;
+    
 }
 .name h4{
     font-family: 'GothamPro';
@@ -68,8 +72,24 @@ body{
 .name p{
     font-weight: 900;
 }
+
+/*info*/
+.row01Info{
+    position: absolute;
+    top: 300px;
+    right: 0;
+}
+.row01Info p{
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 50px;
+}
+
 /*about 세로*/
-.txtTransform{}
+.txtTransform.inner{
+    position: relative;
+}
 .txtTransform h2{
     font-size: 20px;
     font-weight: normal;
@@ -79,25 +99,14 @@ body{
     top: 100px;
     right: 0;
 } 
-/*info*/
-.row01Info{
-    position: absolute;
-    top: 300px;
-    right: 100px;
-}
-.row01Info p{
-    font-family: 'NanumSquare';
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 50px;
-}
+/*화살표*/
 .downArrow{
     position: absolute;
     bottom: 100px;
     left: 50%;
     margin-left: -21px;
 }
-
+/*aboutR0w02*/
 .aboutRow02{
     width: 100%;
     background: #fff;
