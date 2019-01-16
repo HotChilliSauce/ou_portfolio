@@ -89,6 +89,7 @@ body{
     font-family: 'NanumSquare';
     font-weight: 700;
     font-size: 27px;
+    line-height: 50px;
 }
 .downArrow{
     position: absolute;
@@ -114,6 +115,7 @@ body{
     font-weight: normal;
     font-family: 'NanumSquare'; 
     text-align: center;
+    line-height: 35px;
 }
 
 
