@@ -10,7 +10,6 @@
 <link rel="stylesheet" href="css/default.css" type="text/css"/>
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 <link rel="stylesheet" href="css/style.css" type="text/css"/>
-<link rel="shortcut icon" href="" type="image/x-icon"/>
 <link rel="stylesheet" href="css/mainsmokey.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="shortcut icon" href="images/common/favicon32_2_SOs_icon.ico" type="image/x-icon"/>
@@ -102,6 +101,8 @@
           arrows:false,
         });
         
+            
+        
 
     });
     
@@ -115,16 +116,16 @@
 <header id="header">  
     <!--로고시작-->
     <h1>
-        <a href="#"><img src="images/common/logo_long02.png" alt="로고" title="Go to top"/></a>
+        <a href="#"><img src="images/common/logo_long02.png" alt="로고"/></a>
     </h1>
     <!--로고끝-->
     <!--gnb시작-->
     <ul class="gnbL">
-        <li><a href="#">CONTACT ME</a></li>
+        <li><a href="#contact">CONTACT ME</a></li>
     </ul>
     <ul class="gnbR">
         <li><a href="#">PROJECT</a></li>
-        <li><a href="#">ABOUT</a></li>
+        <li><a href="sub/about.html">ABOUT</a></li>
     </ul>
     <!--gnb끝-->
     <!--topButton-->
@@ -144,7 +145,7 @@
     <div class="mainBanner">
         <div class="mainSlider">
             <h1>Web Design &amp; Publishing</h1>
-            <div class="aboutLink"><a href="#"><p>ABOUT</p></a></div>
+            <div class="aboutLink"><a href="sub/about.html"><p>ABOUT</p></a></div>
             <div class="downArrow"><img src="images/main/down_arrow.png" alt="아래화살표"/></div>
         </div>
     </div>
@@ -379,14 +380,17 @@
     <div class="mainRow04">
         <div class="inner">
             <!--제목-->
-            <div data-aos="fade-right"
-             data-aos-offset="300"
-             data-aos-easing="ease-in-sine">
-                <h3><img src="images/main/visual04_tit.png"/></h3>
+            <div id="contact">
+                <div data-aos="fade-right"
+                 data-aos-offset="300"
+                 data-aos-easing="ease-in-sine">
+                    <h3><img src="images/main/visual04_tit.png"/></h3>
+                </div>
             </div>
             
             <!--제목끝-->
             <!--contact내용-->
+            
             <div class="row04Info">
                 <div data-aos="flip-down">
                 <dl>
@@ -486,7 +490,6 @@
     <!---->
     
     <!--aos-->
-    <script src="../dist/aos.js"></script>
     <script>
       AOS.init({
         easing: 'ease-in-out-sine'

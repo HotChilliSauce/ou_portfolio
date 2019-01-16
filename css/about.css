@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+body{
+    background: #fff;
+}
+
+#header{
+    background: #f6ede2; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(bottom, #fff , #f6ede2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, #fff, #f6ede2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, #fff, #f6ede2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, #fff , #f6ede2); /* Standard syntax */
+    }
+#header ul li:hover a:after{
+    width: 0;
+}
+#header .gnbR li:nth-child(2):after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+/*jquery*/
+/*mainSlider*/
+#mainBanner{
+    width: 100%;
+    position: fixed;
+}
+#overflow{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#container{
+    margin-top: 100px;
+}
+.aboutRow01{
+    height: 900px;
+    background: url(../images/sub/About_bg02.jpg) no-repeat;
+}
+.aboutRow01.inner{
+    position: relative;
+}
+.aboutRow01 h3{
+    position: absolute;
+    top: 150px;
+    left: 135px;
+}
+.name{
+    position: absolute;
+    bottom: 220px;
+    left: 50%;
+    margin-left: -210px;
+    text-align: right;
+    font-size: 17px;
+}
+.name h4{
+    font-family: 'GothamPro';
+    margin-bottom: 20px;
+}
+.name p{
+    font-weight: 900;
+}
+/*about 세로*/
+.txtTransform{}
+.txtTransform h2{
+    font-size: 20px;
+    font-weight: normal;
+    -webkit-transform: rotate(90deg); 
+    -ms-transform: rotate(90deg);
+    position: absolute;
+    top: 100px;
+    right: 0;
+} 
+/*info*/
+.row01Info{
+    position: absolute;
+    top: 300px;
+    right: 100px;
+}
+.row01Info p{
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    font-size: 27px;
+}
+.downArrow{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -21px;
+}
+
+.aboutRow02{
+    width: 100%;
+    background: #fff;
+    padding: 150px 0;
+    margin-top: 80px;
+}
+.aboutRow02 .w80{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 2px solid #000;
+}
+.aboutRow02 p{
+    height: 200px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'NanumSquare'; 
+    text-align: center;
+}
+
+
+/*footer*/
+#footer{
+    height: 200px;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    margin-top: 0;
+}
+
+.footerInfo h3 {
+    padding-top: 50px;
+}

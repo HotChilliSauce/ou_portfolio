@@ -21,6 +21,21 @@
 #header h1 a{
     display: block;
 }
+
+#header ul li a:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #000;
+    margin: 0 auto;
+    margin-top: -10px;
+    transition: all 0.7s linear;/*ease기본값이 빨라졌다가 느려짐,ease-in점점빨라짐, -out점점느려짐, linear선형 일정한속도로 감*/
+}
+#header ul li:hover a:after{
+    width: 100%;
+}
+
 .gnbL{
     position: absolute;
     left: 15%;
@@ -34,6 +49,8 @@
     margin-right: 15%;
 }
 .gnbL li a, .gnbR li a{
+    padding: 5px;
+    padding-bottom: 10px;
     display: block;
 }
 .gnbR{
