@@ -1,5 +1,19 @@
 @charset "utf-8";
 
+
+/*#main_header*/
+#main_header {
+    height:180px;
+    border-bottom:3px solid #0094ff;
+    text-align:center;
+    padding-top:70px;
+}
+#logo {
+    color:#444;
+    font-size:72px;
+    font-weight:100;
+}
+
 /*헤더시작*/
 #header{
     height: 103px;

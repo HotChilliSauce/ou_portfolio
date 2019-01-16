@@ -102,35 +102,7 @@
           arrows:false,
         });
         
-        /*popup*/
-        function doImgPop(img){ 
-         img1= new Image(); 
-         img1.src=(img); 
-         imgControll(img); 
-        } 
-
-        function imgControll(img){ 
-         if((img1.width!=0)&&(img1.height!=0)){ 
-            viewImage(img); 
-          } 
-          else{ 
-             controller="imgControll('"+img+"')"; 
-             intervalID=setTimeout(controller,20); 
-          } 
-        }
-
-        function viewImage(img){ 
-         W=img1.width; 
-         H=img1.height; 
-         O="width="+W+",height="+H+",scrollbars=yes"; 
-         imgWin=window.open("","",O); 
-         imgWin.document.write("<html><head><title>이미지상세보기 </title></head>");
-         imgWin.document.write("<body topmargin=0 leftmargin=0>");
-         imgWin.document.write("<img src="+img+" onclick='self.close()' style='cursor:pointer;' title ='클릭하시면 창이 닫힙니다.'>");
-         imgWin.document.close();
-        }
         
-
     });
     
 </script>  
@@ -149,11 +121,11 @@
     <!--로고끝-->
     <!--gnb시작-->
     <ul class="gnbL">
-        <li><a href="#contact" data-duration="1s">CONTACT ME</a></li>
+        <li><a href="#contact">CONTACT ME</a></li>
     </ul>
     <ul class="gnbR">
-        <li><a href="#">PROJECT</a></li>
-        <li><a href="sub/about.html" data-duration="1s">ABOUT</a></li>
+        <li><a href="sub/project.html">PROJECT</a></li>
+        <li><a href="sub/about.html">ABOUT</a></li>
     </ul>
     <!--gnb끝-->
     <!--topButton-->
@@ -173,7 +145,7 @@
     <div id="mainBanner">
         <div class="mainSlider">
             <h1>Web Design &amp; Publishing</h1>
-            <div class="aboutLink"><a href="sub/about.html" data-duration="1s"><p>ABOUT</p></a></div>
+            <div class="aboutLink"><a href="sub/about.html"><p>ABOUT</p></a></div>
             <div class="downArrow"><img src="images/main/down_arrow.png" alt="아래화살표"/></div>
         </div>
     </div>
@@ -228,8 +200,8 @@
             <section id="dg-container" class="dg-container gallerys">
             <div class="dg-wrapper">
                 <a href="https://hotchillisauce.github.io/noroopaint_w/" target="_blank"><img src="images/main/visual01_web02.png" alt="웹"><div>NOROO PAINT</div></a>
-                <a href="#"><img src="images/main/visual01_web01.png" alt="웹"><div>LiBook</div></a>
-                <a href="#"><img src="images/main/visual01_mobi01_all.png" alt="모바일"><div>touplanb Mobile</div></a>
+                <a href="sub/project.html" target="_blank"><img src="images/main/visual01_web01.png" alt="웹"><div>LiBook</div></a>
+                <a href="sub/project.html" target="_blank"><img src="images/main/visual01_mobi01_all.png" alt="모바일"><div>touplanb Mobile</div></a>
                 <a href="https://hotchillisauce.github.io/m/" target="_blank"><img src="images/main/visual01_mobi02_all.png" alt="모바일"><div>NOROO PAINT Mobile</div></a>
             </div>
             <nav>	
@@ -325,7 +297,7 @@
                 <div class="row03_1_autoplay">
                     <div>
                         <h3>
-                          <a href="#"><img src="images/main/visual03_poster01.png" alt="정도인테리어 포스터" title="클릭하시면 원본크기로 보실 수 있습니다." style="cursor: pointer;" onclick="doImgPop('images/main/poster01.jpg')"/></a>
+                          <a href="#"><img src="images/main/visual03_poster01.png" alt="정도인테리어 포스터" title="클릭하시면 원본크기로 보실 수 있습니다."/></a>
                         </h3>
                     </div>
                     <div>
