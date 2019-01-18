@@ -10,12 +10,19 @@
 <link rel="stylesheet" href="../css/default.css" type="text/css"/>
 <link rel="stylesheet" href="../css/slick.css" type="text/css">
 <link rel="stylesheet" href="../css/about.css" type="text/css"/>
+<link rel="stylesheet" href="../css/loading.css" type="text/css"/>
 <link rel="stylesheet" href="../css/mainsmokey.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="shortcut icon" href="../images/common/favicon32_2_SOs_icon.ico" type="image/x-icon"/>
 <script type="text/javascript" src="../js/jquery.js"></script>
 <script type="text/javascript" src="../js/slick.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/jquery-1.12.0.min.js"></script>
+    <script>
+        $(window).load(function () {
+            $('#loading').delay(2500).fadeOut(500);
+        });
+    </script>
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
 <script type="text/javascript">
     $(document).ready(function(){
@@ -51,24 +58,28 @@
             var op = 1 - (window.pageYOffset / slider.offsetHeight);
             slider.style.opacity = op;
         };
-
-        
-
-        
+ 
 
     });
     
 </script>  
 </head>
 <body>
+<!--로딩화면-->
+<div id="loading">
+    <div id="loader">
+      <div id="box"></div>
+      <div id="hill"></div>
+    </div>
+</div>
+<!--로딩화면끝-->
 <!--전체시작-->
 <div id="wrap">
-    
 <!--헤더시작-->
 <header id="header">  
     <!--로고시작-->
     <h1>
-        <a href="../index.html"><img src="../images/common/logo_long02.png" alt="로고"/></a>
+        <a href="../index.html"><img src="../images/common/logo_long02.png" alt="로고" title="Go to top"/></a>
     </h1>
     <!--로고끝-->
     <!--gnb시작-->
