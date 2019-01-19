@@ -113,6 +113,50 @@
           arrows:false,
         });
         
+        /*popup*/
+        /*팝업*/
+        $('#poster01').click(function(){
+            $('#popup01').css('display','block')
+        })
+        $('#popup01').click(function(){
+            $('#popup01').css('display','none')
+        });
+        
+        $('#poster02').click(function(){
+            $('#popup02').css('display','block')
+        })
+        $('#popup02').click(function(){
+            $('#popup02').css('display','none')
+        });
+        
+        $('#poster03').click(function(){
+            $('#popup03').css('display','block')
+        })
+        $('#popup03').click(function(){
+            $('#popup03').css('display','none')
+        });
+        
+        $('#poster04').click(function(){
+            $('#popup04').css('display','block')
+        })
+        $('#popup04').click(function(){
+            $('#popup04').css('display','none')
+        });
+        
+        $('#poster05').click(function(){
+            $('#popup05').css('display','block')
+        })
+        $('#popup05').click(function(){
+            $('#popup05').css('display','none')
+        });
+        
+        $('#poster06').click(function(){
+            $('#popup06').css('display','block')
+        })
+        $('#popup06').click(function(){
+            $('#popup06').css('display','none')
+        });
+        
         
     });
     
@@ -159,6 +203,41 @@
 <!--메인슬라이더끝-->
 <!--컨테이너시작-->
 <div id="container">
+    
+  <!--팝업창 popup-->
+   <div id="popup01">
+         <div class="popupCon" style="cursor:pointer" title="클릭하여 닫기">
+          <img src="images/main/poster001.jpg"/>
+          </div>          
+    </div>
+    <div id="popup02">
+         <div class="popupCon" style="cursor:pointer" title="클릭하여 닫기">
+          <img src="images/main/poster001.jpg"/>
+          </div>          
+    </div>
+    <div id="popup03">
+         <div class="popupCon" style="cursor:pointer" title="클릭하여 닫기">
+          <img src="images/main/poster001.jpg"/>
+          </div>          
+    </div>
+    <div id="popup04">
+         <div class="popupCon" style="cursor:pointer" title="클릭하여 닫기">
+          <img src="images/main/poster001.jpg"/>
+          </div>          
+    </div>
+    <div id="popup05">
+         <div class="popupCon" style="cursor:pointer" title="클릭하여 닫기">
+          <img src="images/main/poster001.jpg"/>
+          </div>          
+    </div>
+    <div id="popup06">
+         <div class="popupCon" style="cursor:pointer" title="클릭하여 닫기">
+          <img src="images/main/poster001.jpg"/>
+          </div>          
+    </div>
+    
+    <!--팝업창 popup끝-->
+    
     <!--메인슬라이더시작-->
     <div id="mainBanner">
         <div class="mainSlider">
@@ -314,34 +393,41 @@
             <div class="row03_1">
                 <div class="row03_1_autoplay">
                     <div>
-                        <h3>
-                          <a href="#"><img src="images/main/visual03_poster01.png" alt="정도인테리어 포스터" title="클릭하시면 원본크기로 보실 수 있습니다."/></a>
+                         <!--<h3>
+                          <a onclick="openLayer('layerPop',-500,-500)"><img src="images/main/visual03_poster01.png" title="클릭하여 크게보기" style="cursor:pointer;"/></a>
+                            <div id="layerPop" style="position:absolute; display:none; border:3px solid #ccc;">
+                              <a href="#" onclick="closeLayer('layerPop')" class="close">
+                                 <p><img src="images/main/poster01.jpg"/></p>
+                              </a>
+                          </div>
+                        </h3>-->                       
+                        <h3 id="poster01" style="cursor:pointer;" title="클릭하여 크게보기">
+                            <img src="images/main/visual03_poster01.png" alt="정도인테리어" border="0">
                         </h3>
                     </div>
                     <div>
-                        <h3>
-                          <a href="#"><img src="images/main/visual03_poster02.png" alt="빨대포스터"/></a>
+                        <h3 id="poster02" style="cursor:pointer;" title="클릭하여 크게보기">
+                            <img src="images/main/visual03_poster02.png" alt="빨대캠패인" border="0">
                         </h3>
                     </div>
                     <div>
-                        <h3>
-                            <a href="#"><img src="images/main/visual03_poster04.png" alt="판타지포스터"/>
-                            </a>
+                        <h3 id="poster03" style="cursor:pointer;" title="클릭하여 크게보기">
+                            <img src="images/main/visual03_poster03.png" alt="빨대캠패인" border="0">
                         </h3>
                     </div>
                     <div>
-                        <h3>
-                         <a href="#"><img src="images/main/visual03_poster03.png" alt="빨대포스터"/></a>
+                        <h3 id="poster04" style="cursor:pointer;" title="클릭하여 크게보기">
+                            <img src="images/main/visual03_poster04.png" alt="아트웍" border="0">
                         </h3>
                     </div>
                     <div>
-                        <h3>
-                         <a href="#"><img src="images/main/visual03_poster05.png" alt="일러"/></a>
+                        <h3 id="poster05" style="cursor:pointer;" title="클릭하여 크게보기">
+                            <img src="images/main/visual03_poster05.png" alt="일러스트" border="0">
                         </h3>
                     </div>
                     <div>
-                        <h3>
-                         <a href="#"><img src="images/main/visual03_poster06.png" alt="일러"/></a>
+                        <h3 id="poster06" style="cursor:pointer;" title="클릭하여 크게보기">
+                            <img src="images/main/visual03_poster06.png" alt="전단지" border="0">
                         </h3>
                     </div>
                 </div>

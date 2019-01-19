@@ -56,6 +56,26 @@
     transition-timing-function: cubic-bezier(.175,.885,.32,1.275);
 }
 
+/*popup*/
+#popup01{
+    position:fixed; z-index: 10000; background:rgba(0,0,0,0.8);width:600px;height:847px; top:0; left:0; bottom: 0; right: 0; margin: auto; display:none;
+}
+#popup02{
+    position:fixed; z-index: 10000; background:rgba(0,0,0,0.8);width:600px;height:847px; top:0; left:0; bottom: 0; right: 0; margin: auto; display:none;
+}
+#popup03{
+    position:fixed; z-index: 10000; background:rgba(0,0,0,0.8);width:600px;height:847px; top:0; left:0; bottom: 0; right: 0; margin: auto; display:none;
+}
+#popup04{
+    position:fixed; z-index: 10000; background:rgba(0,0,0,0.8);width:600px;height:847px; top:0; left:0; bottom: 0; right: 0; margin: auto; display:none;
+}
+#popup05{
+    position:fixed; z-index: 10000; background:rgba(0,0,0,0.8);width:600px;height:847px; top:0; left:0; bottom: 0; right: 0; margin: auto; display:none;
+}
+#popup06{
+    position:fixed; z-index: 10000; background:rgba(0,0,0,0.8);width:600px;height:847px; top:0; left:0; bottom: 0; right: 0; margin: auto; display:none;
+}
+
 
 /*mainSlider*/
 /*
@@ -67,7 +87,6 @@
     position: relative;
 }
 */
-
 .mainSlider{
     width: 484px;
     height: 496px;
