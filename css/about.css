@@ -105,7 +105,7 @@ body{
 /*화살표*/
 .downArrow{
     position: absolute;
-    bottom: 100px;
+    bottom: 150px;
     left: 50%;
     margin-left: -21px;
 }
@@ -113,7 +113,7 @@ body{
 .aboutRow02{
     width: 100%;
     background: #fff;
-    padding: 150px 0;
+    padding: 150px 0 80px 0;
     margin-top: 80px;
 }
 .aboutRow02 .w80{
@@ -122,12 +122,40 @@ body{
     border-bottom: 2px solid #000;
 }
 .aboutRow02 p{
-    height: 200px;
+    height: 250px;
     font-size: 20px;
     font-weight: normal;
     font-family: 'NanumSquare'; 
     text-align: center;
     line-height: 35px;
+}
+/*다운로드*/
+.profile{
+    width: 95px;
+    height: 95px;
+    border: 2px solid #ee5e5e;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 80px;;
+}
+.profile a{
+    display: block;
+}
+.profile a img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.profile a span{
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    font-family: 'NanumSquare'
+}
+.profile a:hover span{
+    color: #999;
 }
 
 
