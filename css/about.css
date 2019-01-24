@@ -133,7 +133,7 @@ body{
 .profile{
     width: 95px;
     height: 95px;
-    border: 2px solid #ee5e5e;
+    border: 2px solid #999;
     border-radius: 50%;
     margin: 0 auto;
     margin-top: 80px;;
@@ -141,10 +141,11 @@ body{
 .profile a{
     display: block;
 }
-.profile a img{
+.fa-download{
+    font-size: 40px;
     display: block;
-    margin: 0 auto;
-    margin-top: 10px;
+    text-align: center;
+    margin: 10px 0;
 }
 .profile a span{
     font-size: 10px;
@@ -155,7 +156,10 @@ body{
     font-family: 'NanumSquare'
 }
 .profile a:hover span{
-    color: #999;
+    color: #ee5e5e;
+}
+.profile a:hover .fa-download{
+    color: #ee5e5e;
 }
 
 
